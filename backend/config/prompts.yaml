@@ -1,0 +1,61 @@
+search_context: |
+  You are an expert developer assistant. From the following documentation snippets, identify the most relevant endpoint, class, or function for this query: "{query}".
+  Return:
+  - Name of the endpoint/function
+  - Parameters required/optional
+  - A short usage description
+  - A code example showing usage.
+  
+  Return your response as a valid JSON object matching this schema:
+  {{
+    "name": "...",
+    "parameters": "...",
+    "description": "...",
+    "code_example": "..."
+  }}
+  Ensure it contains ONLY valid JSON and nothing else.
+
+qa: |
+  You are a developer documentation assistant. Answer the user's coding question based ONLY on the provided API documentation context.
+  If the answer is not available or cannot be reasonably inferred, respond with "Not discussed in this documentation."
+  
+  Context:
+  {context}
+  
+  Question: {question}
+  Answer:
+
+error_explanation: |
+  The developer encountered this error:
+  "{error_message}"
+  
+  Using the framework documentation context below, explain:
+  1. What causes this error.
+  2. Step-by-step instructions to fix it.
+  3. A corrected code example.
+  
+  Context:
+  {context}
+  
+  Answer:
+
+code_gen: |
+  You are an expert software developer. Generate a clean, production-ready code example for:
+  "{task}"
+  
+  Use the official API structure described in the docs below.
+  Docs:
+  {context}
+  
+  Output the code example cleanly, using markdown code fences.
+
+best_practice: |
+  From the API documentation, summarize best practices for:
+  "{topic}"
+  
+  Include:
+  - Do's (recommended patterns)
+  - Don'ts (common pitfalls/anti-patterns)
+  - Performance/optimization tips
+  
+  Format the response in structured markdown.

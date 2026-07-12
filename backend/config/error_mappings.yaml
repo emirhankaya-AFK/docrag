@@ -1,0 +1,12 @@
+AttributeError:
+  explanation: "Occurs when referencing an attribute or method that does not exist in the object module."
+  solution: "Verify if the method was deprecated or moved. Check the library version using version_manager."
+TypeError:
+  explanation: "Occurs when passing incompatible types to a function (e.g. unpacking NoneType)."
+  solution: "Ensure the preceding method did not fail and return None. Add defensive checks before unpacking."
+ModuleNotFoundError:
+  explanation: "Occurs when attempting to import a package that is not installed in the environment."
+  solution: "Run `pip install <package_name>` or check your virtual environment configurations."
+ConnectionError:
+  explanation: "Occurs when a network request fails due to offline status or incorrect API hosts."
+  solution: "Check local internet connection, verify host endpoints, and inspect firewall parameters."

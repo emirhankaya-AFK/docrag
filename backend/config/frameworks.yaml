@@ -1,0 +1,16 @@
+- name: FastAPI
+  current_version: 0.111.0
+  doc_format: HTML
+  language: Python
+- name: Django
+  current_version: 5.0.6
+  doc_format: Markdown
+  language: Python
+- name: React
+  current_version: 18.3.1
+  doc_format: HTML
+  language: JavaScript
+- name: PyTorch
+  current_version: 2.3.0
+  doc_format: PDF
+  language: Python
