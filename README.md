@@ -1,5 +1,7 @@
 # DocRAG - Developer Documentation Tech Assistant Agent
 
+[English](README.md) | [Türkçe](README_TR.md)
+
 DocRAG is a complete, developer-focused documentation assistant and code synthesizer. It parses framework and library API documentations across HTML, Markdown, and PDF layouts, conducts semantic code searches, answers complex setup questions, resolves compilation and runtime errors using predefined trace mappings, and generates ready-to-run code snippets.
 
 ---
